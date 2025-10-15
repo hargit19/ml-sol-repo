@@ -1,0 +1,35 @@
+services:
+  pvpowerwebapp-main:
+    build:
+      context: ./pvpowerwebapp-main
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./pvpowerwebapp-main:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    env_file:
+      - ./pvpowerwebapp-main/.env
+
+  pvpowerbackend-main:
+    build:
+      context: ./pvpowerbackend-main
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./pvpowerbackend-main:/app
+      - /app/node_modules
+      - /home/vettel/Desktop/work/Website/Data:/app/Data
+    env_file:
+      - ./pvpowerbackend-main/.env
+
+  model-master:
+    build:
+      context: ./Model-master
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./Model-master:/app
+    env_file:
+      - ./Model-master/.env
