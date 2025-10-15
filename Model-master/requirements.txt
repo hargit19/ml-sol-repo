@@ -1,0 +1,15 @@
+flask
+pandas
+Flask-Cors
+Flask-Mail
+Flask-PyMongo
+ephem
+scikit-learn
+tensorflow
+gunicorn
+xlrd
+olefile
+python-dotenv
+keras
+pymongo
+numpy
