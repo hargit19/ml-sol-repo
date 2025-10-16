@@ -1,0 +1,44 @@
+.resetP-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.resetP-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  z-index: 1000;
+}
+
+.resetP__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.resetP-container > input {
+  margin: 15px auto;
+  padding: 8px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+  outline: none;
+}
+
+.reset_btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
