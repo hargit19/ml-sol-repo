@@ -1,0 +1,259 @@
+/* Import improved fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+.tut {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  background-color: #121621;
+  color: #ffffff;
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  min-height: 100vh; /* Ensure minimum height covers viewport */
+}
+
+p {
+  color: #b8b8b8;
+  line-height: 1.6;
+}
+
+/* Sidebar styling - updated to have fixed position and reduced height */
+.tutorial__sidebar {
+  flex: 0.2;
+  position: fixed; /* Change from sticky to fixed */
+  top: 80px; /* Position it below the top navigation */
+  height: auto;
+  width: 260px; /* Height based on content instead of viewport */
+  max-height: 80vh; /* Maximum height of 80% of viewport */
+  margin-left: 2%;
+  margin-right: 3%;
+  border-radius: 12px;
+  background-color: #1e2430;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  overflow-y: auto; /* Allow scrolling if content is too tall */
+  z-index: 100; /* Ensure it stays above other content */
+}
+
+.tutorial__sidebar > p {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: #1e2430;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.tutorial__sidebar > ul {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-bottom: 30px; /* Add padding to bottom of list */
+}
+
+.tutorial__sidebar > ul > li {
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.tutorial__sidebar > ul > li > p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.tutorial__sidebar > ul > li > ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.sidebar-link-to-content {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+.sidebar-link-to-content:hover {
+  background-color: rgba(255, 105, 52, 0.1);
+  color: #ffffff;
+}
+
+.sidebar-link-to-content li {
+  margin-top: 6px;
+  color: #b8b8b8;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.sidebar-link-to-content:hover li {
+  color: #ffffff;
+}
+
+.sidebar-link-to-content.active {
+  background-color: rgba(255, 105, 52, 0.2);
+  color: #ff6934;
+}
+
+.sidebar-link-to-content.active li {
+  color: #ff6934;
+  font-weight: 600;
+}
+
+/* Main content container - updated to add left margin to accommodate fixed sidebar */
+.tutorial__container {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 22%; /* Add margin to account for fixed sidebar */
+  border-left: 4px solid #ff6934;
+  padding-left: 40px;
+}
+
+.step {
+  margin-top: 30px;
+  color: #e6e6e6;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 105, 52, 0.2);
+  scroll-margin-top: 20px; /* Add scroll margin for better positioning when navigating */
+}
+
+.step > h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.step > h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ff6934;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.step > img {
+  width: 70%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step > img:hover {
+  transform: scale(1.02);
+}
+
+.tutorial__container > p {
+  width: 80%;
+}
+
+.tut__overview {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  font-weight: 700;
+  scroll-margin-top: 20px;
+}
+
+.tut-overview-txt {
+  color: #b8b8b8;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.tutorial__container > h2 {
+  margin: 25px 0px 15px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  position: relative;
+}
+
+.tutorial__container > h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #ff6934;
+  border-radius: 2px;
+}
+
+.step > p {
+  color: #b8b8b8;
+  width: 80%;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.step > img {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 900px) {
+  .tutorial__sidebar {
+    display: none;
+  }
+  
+  .tutorial__container {
+    flex: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 60px;
+    margin-left: 0; /* Reset margin when sidebar is hidden */
+  }
+  
+  .step > img {
+    margin-bottom: 25px;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .tut__overview {
+    font-size: 2.5rem;
+  }
+  
+  .step > p, .tutorial__container > p {
+    width: 100%;
+  }
+}
+
+/* Step number badges */
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ff6934;
+  color: white;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

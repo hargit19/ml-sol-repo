@@ -1,0 +1,66 @@
+.about__why{
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;  
+}
+.about__why>h1{
+    text-align: center;
+}
+.about__why>p{
+    color: gray;
+    font-size: 25px;
+    margin-top: 35px;
+    text-align: center;
+}
+.why-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.why-cards>div{
+    width: 30%;
+    border-radius: 20px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 15px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+.why-icons{
+    font-size: 100px;
+    color: #1c1914;
+}
+.card-title{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #5f5f60;
+    margin-top: 15px;
+}
+.card-desc{
+    text-align: center;
+    color: #5f5f60;
+}
+
+@media (max-width:997px){
+    .about__why{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-cards{
+        flex-direction: column;
+    }
+    .why-cards>div{
+        width: 80%;
+        margin-bottom: 40px;
+       height: 500px;
+    }
+}
+

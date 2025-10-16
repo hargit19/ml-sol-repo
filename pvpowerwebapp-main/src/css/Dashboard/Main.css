@@ -1,0 +1,56 @@
+@import url("Sidebar.css");
+.main__container{
+    height: 100vh;
+    padding: 10px;
+    padding-top: 0;
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f5f4;
+    overflow: scroll;
+    /* position: relative; */
+}
+.main__map{
+    height: 90%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.main__header{
+    display: flex;
+    color: #c5c4c4;
+    padding: 10px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #c5c4c4;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+.dheader__title{
+    font-size: 20px;
+}
+.dheader__greet{
+    margin-top: 5px;
+    /* border: 1px solid orange; */
+    width: 100%;
+    text-align: center;
+}
+
+.map__location{
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    outline: none;
+    width: 20rem;
+    border-radius: 20px;
+    border: 1px solid #e2e0e0;
+}
+.sidebar__container.collapsed + .main__container {
+    flex: 0.96; /* The sum should remain 1 (0.2 + 0.8 = 1) */
+  }
+  .sidebar__container.collapsed + .main__map {
+    width:100%;
+  }

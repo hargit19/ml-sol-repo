@@ -1,0 +1,41 @@
+/* Style for the label and select container */
+.custom-dropdown {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2px;
+    flex-direction: column;
+  }
+  
+  /* Style for the label */
+  .custom-dropdown label {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Style for the select element */
+  .custom-dropdown select {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 150px; /* Adjust the width as needed */
+  }
+  
+  /* Style for the "Select a Variable" option */
+  .custom-dropdown select option:first-child {
+    color: #888; /* Change color for the placeholder text */
+  }
+  
+  /* Style for disabled options (already selected) */
+  .custom-dropdown select option[disabled] {
+    color: #ccc; /* Change color for disabled options */
+  }
+  
+  /* Style for selected options */
+  .custom-dropdown select option[selected] {
+    background-color: #007bff; /* Change background color for selected options */
+    color: #fff; /* Change text color for selected options */
+  }
+  

@@ -1,0 +1,16 @@
+.checkout-enterprise-btn{
+    width: 90%;
+    padding: 12px 8px;
+    margin-left: 5%;
+    background-color: transparent;
+    border: 1.5px solid white;
+    font-weight: 600;
+    color: white;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.disabled-enterprise-pay{
+    cursor: not-allowed;
+}

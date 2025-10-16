@@ -1,0 +1,184 @@
+/* Updated CSS with increased width and black text */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-main: #121621;
+  --bg-secondary: #1e293b;
+  --bg-card: #ffffff;
+  --text-dark: #000000;
+  --text-muted: #4b5563;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --success: #22c55e;
+  --error: #ef4444;
+  --border: #334155;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+}
+
+.main-container {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  width: 90%;
+  padding-inline: 18%;
+  /* margin-inline: 10%; */
+  color: var(--text-dark);
+  padding-top: 1rem;
+  
+}
+
+.main-header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.header-greeting {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.account-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.account-title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .account-content {
+    flex-direction: row;
+  }
+}
+
+.profile-card-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-card-container {
+    width: 350px;
+  }
+}
+
+.profile-card {
+  background-color: var(--bg-card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  color: var(--text-dark);
+  height: 380px;
+}
+
+.profile-card:hover {
+  transform: translateY(-3px);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: var(--bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border: 3px solid var(--bg-main);
+}
+
+.username {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.plan-name {
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.details-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 2rem;
+  color: var(--text-dark);
+}
+
+.data-list [data-radix-collection-item] {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-list [data-radix-collection-item]:last-child {
+  border-bottom: none;
+}
+
+/* Badges */
+.plan-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  color: var(--text-dark);
+}
+
+.plan-badge.free {
+  color: var(--success);
+  border-color: var(--success);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.plan-badge.professional {
+  color: var(--bg-main);
+  border-color: var(--bg-main);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* Buttons */
+.edit-profile-btn {
+  background-color: var(--bg-main);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  margin-top: 5px;
+  margin-left: 105px;
+}
+
+.edit-profile-btn:hover {
+  background-color: var(--bg-main);
+}
+
+/* Dialog */
+.edit-dialog {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+}

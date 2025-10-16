@@ -1,0 +1,8 @@
+.state_select{
+    background-color: lightgrey;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: black;
+}

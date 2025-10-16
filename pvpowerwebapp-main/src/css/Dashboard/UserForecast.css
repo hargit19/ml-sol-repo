@@ -1,0 +1,33 @@
+.download-btn{
+  border:none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  width: fit-content;
+  transition: background-color 200ms ease;
+}
+.download-btn:hover{
+  background-color: rgb(2, 92, 2);
+}
+
+.dheader__date{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.no-data-available{
+  height: 100%;
+  font-size: 30px;
+  font-weight: 500;
+  color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-model{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

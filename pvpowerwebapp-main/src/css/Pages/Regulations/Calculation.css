@@ -1,0 +1,118 @@
+.calculator__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #121621;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .calculator__container h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .calculator__container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e2028;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #ff6934;
+  }
+  
+  .info-text {
+    color: #aaa;
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+  
+  .calculate-btn {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #ff6934;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .calculate-btn:hover {
+    background-color: #e05a2b;
+  }
+  
+  .result-box {
+    background-color: #1e2028;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff6934;
+  }
+  
+  .result-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .error-text {
+    color: #ff6934;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 50px;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .highlight {
+    color: #ff6934;
+    font-weight: 600;
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #ff6934;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }

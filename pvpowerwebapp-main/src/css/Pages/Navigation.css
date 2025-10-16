@@ -1,0 +1,158 @@
+
+.nav__logo {
+    /* width: 80px; */
+    height: 80px;
+    /* border: 1px solid grey; */
+    /* background-color: grey; */
+    margin-left: 2%;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    /* color: black; */
+    font-weight: 600;
+} 
+.nav__logo>img{
+    width: 150px;
+    height: auto;
+}
+.nav__container{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background: #121621;
+    backdrop-filter: blur(10px);
+    /* border-radius: 50px; */
+    /* top: 20px; */
+}
+.nav__item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+   /* background-color: #CCCCCC; */
+    padding: 6px;
+    font-size: 15px;
+     /* border: 1px solid black;  */
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    /* font-weight: bold; */
+    margin: 10px;
+    margin-left: 25px;
+    transition: all 0.1s ease;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.nav__item:hover {
+    border: none;
+    font-size: 16px; /* Add this line to make the text bold on hover */
+    /* transform: scale(1.1); */
+    /* transition: all 0.3s ease-in-out;  */
+}
+.dashboard__btn{
+    background-color: transparent;
+    /* border-radius: 8px; */
+    position: absolute;
+    font-size: 17px;
+    right: 15%;
+    color: white;
+    /* margin-left: 90%; */
+    /* transition: background-color 200ms ease-in; */
+}
+.nav__toggle{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.toggle{
+    margin: 2px 0 2px 0;
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    width: 20px;
+    background-color: white;
+}
+
+@media (max-width:998px){
+    .nav__container{
+        flex-direction: column;
+        width: 100vw;
+        top: 0;
+        position: fixed;
+        border-radius: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        /* background-color: transparent; */
+        backdrop-filter: blur(9px);
+    }
+    .nav__logo{
+        justify-content: space-between;
+        margin-left: 5%;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .nav__toggle{
+        display: flex;
+        margin-right: 2rem;
+        cursor: pointer;
+        justify-self: flex-start;
+    }
+    .nav__list{
+        display: none;
+    }
+    .nav__list{
+        flex-direction: column;
+        width: 20%;
+        margin: 0;
+        /* background-color: rgba(0, 0, 0, 0.349); */
+        background-color: transparent;
+        /* backdrop-filter: blur(12px); */
+    }
+    .signup, .dashboard__btn{
+        position: static;
+        background-color: transparent;
+        /* color: blue; */
+        border-radius: 0;
+    }
+    .nav__item:hover{
+        border: none;
+        background-color: rgba(0, 0, 0, 0.393);
+    }
+    .nav__item{
+        border: none;
+        width: 100%;
+        padding: 8px 0;
+        margin: 0;
+        margin-left: 0;
+        /* padding: 0; */
+        /* text-shadow: 2px 2px 5px black; */
+    }
+    .nav__logo > p{
+        margin-left: 20px;
+    }
+    .active{
+        display: flex;
+    }
+}
+@media (max-width: 998px){
+.nav__list {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+   
+}
+}

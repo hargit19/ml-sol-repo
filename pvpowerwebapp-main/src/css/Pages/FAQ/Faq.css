@@ -1,0 +1,33 @@
+
+.faq__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+.faq__heading{
+    color:black;
+}
+.title{
+    color: black;
+}
+.faq__accordion{
+    margin-top: 50px;
+    border: 20px  double black; 
+    border-radius: 20px;
+    background-color:#D2B47F;
+}
+.extra{
+    color: black;
+    margin-top: 20px;
+}
+@media (max-width:500px){
+    .faq__accordion{
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,181 @@
+/* Setup.css */
+.setup__section {
+  padding: 50px 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.setup__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.setup__title h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #14171f;
+  margin-bottom: 15px;
+}
+
+.setup__underline {
+  height: 4px;
+  width: 80px;
+  background-color: #FF5722;
+  margin: 0 auto;
+}
+
+.setup__container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .setup__container {
+    flex-direction: column;
+  }
+}
+
+.setup__carousel {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.setup__swiper {
+  height: 400px;
+  width: 100%;
+}
+
+.setup__slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.setup__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.setup__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  padding: 20px;
+}
+
+.setup__caption p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.setup__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.setup__text-content {
+  padding: 20px 0;
+}
+
+.setup__text-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #14171f;
+}
+
+.setup__text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.setup__features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.setup__feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.setup__feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 87, 34, 0.15);
+  border-radius: 50%;
+  color: #FF5722;
+}
+
+.setup__feature-item span {
+  font-weight: 500;
+  color: #14171f;
+}
+
+/* Swiper customization */
+.setup__swiper .swiper-button-next,
+.setup__swiper .swiper-button-prev {
+  color: white;
+  background-color: rgba(255, 87, 34, 0.7);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.setup__swiper .swiper-button-next:after,
+.setup__swiper .swiper-button-prev:after {
+  font-size: 18px;
+}
+
+.setup__swiper .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+}
+
+.setup__swiper .swiper-pagination-bullet-active {
+  background: #FF5722;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .setup__title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .setup__text-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .setup__swiper {
+    height: 300px;
+  }
+  
+  .setup__caption p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .setup__swiper {
+    height: 250px;
+  }
+}

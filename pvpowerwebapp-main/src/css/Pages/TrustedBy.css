@@ -1,0 +1,78 @@
+.trusted-by-container {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.trusted-by-title {
+  color: #1f1914;
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  font-weight: 600;
+}
+
+.trusted-by-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.trusted-logo {
+  height: auto;
+  object-fit: contain;
+}
+
+/* Increased logo sizes */
+.logo1 {
+  width: 300px; /* IIT Roorkee logo */
+}
+
+.logo2 {
+  width: 220px; /* Innovation Hub logo */
+}
+
+.logo3 {
+  width: 220px; /* NM-ICPS logo */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trusted-by-logos {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .trusted-by-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+  
+  .logo1 {
+    width: 260px;
+  }
+  
+  .logo2, .logo3 {
+    width: 180px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .trusted-by-logos {
+    gap: 80px;
+  }
+  
+  .logo1 {
+    width: 280px;
+  }
+  
+  .logo2, .logo3 {
+    width: 200px;
+  }
+}

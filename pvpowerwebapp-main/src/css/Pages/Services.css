@@ -1,0 +1,16 @@
+.services__container{
+    height: 100dvh;
+    width: 100%;
+    background-image: url('../../Images/wave-haikei\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.services__container>.services__content{
+    color: white;
+    z-index: 1000;
+    border: 1px solid red;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+}

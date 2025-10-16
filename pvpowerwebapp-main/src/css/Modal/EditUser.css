@@ -1,0 +1,75 @@
+.edit__wrapper{
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000
+}
+
+.edit__container{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 1000;
+  width: 50%;
+}
+
+.edit__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editOpt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 10%
+}
+.edit__btns{
+    padding-left: 10%;
+    margin-top: 12px;
+}
+.editOpt>label{
+    margin: 5px 0;
+    color: rgb(56, 55, 55);
+}
+.editOpt>input{
+    width: 90%;
+    padding: 8px 13px;
+    outline: none;
+    color: rgb(76, 75, 75);
+    border: 1px solid rgb(76, 75, 75);
+}
+.edit__info>h1{
+    text-align: center;
+}
+
+.save_new_info{
+    background-color: green;
+    color: white;
+    padding: 8px 11px;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 200ms ease;
+}
+.save_new_info:hover{
+    background-color: rgb(1, 79, 1);
+}
+.cancel_new_info{
+    background-color: red;
+    color: white;
+    padding: 8px 11px;
+    border: none;
+    transition: background-color 200ms ease;
+    cursor: pointer;
+}
+.cancel_new_info:hover{
+    background-color: rgb(167, 2, 2);
+}
